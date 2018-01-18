@@ -1,0 +1,1713 @@
+{
+	"id": 0,
+	"name": "libemu",
+	"kind": 0,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "\"commons/LibEmuCore\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/Users/Daan/WebstormProjects/libemu/src/commons/LibEmuCore.ts",
+			"children": [
+				{
+					"id": 2,
+					"name": "LibEmuCore",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "A template Core meant for actual cores to extend"
+					},
+					"children": [
+						{
+							"id": 5,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The instance's constructor, requires core name and version"
+							},
+							"signatures": [
+								{
+									"id": 6,
+									"name": "new LibEmuCore",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {
+										"shortText": "The instance's constructor, requires core name and version"
+									},
+									"parameters": [
+										{
+											"id": 7,
+											"name": "name",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "string"
+											}
+										},
+										{
+											"id": 8,
+											"name": "version",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"shortText": "\n"
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "LibEmuCore",
+										"id": 2
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/LibEmuCore.ts",
+									"line": 6,
+									"character": 28
+								}
+							]
+						},
+						{
+							"id": 3,
+							"name": "name",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/LibEmuCore.ts",
+									"line": 5,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						},
+						{
+							"id": 4,
+							"name": "version",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/LibEmuCore.ts",
+									"line": 6,
+									"character": 19
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 9,
+							"name": "getName",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 10,
+									"name": "getName",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Returns the core's name",
+										"returns": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/LibEmuCore.ts",
+									"line": 22,
+									"character": 18
+								}
+							]
+						},
+						{
+							"id": 11,
+							"name": "getVersion",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 12,
+									"name": "getVersion",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Return the core's version",
+										"returns": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/LibEmuCore.ts",
+									"line": 30,
+									"character": 21
+								}
+							]
+						},
+						{
+							"id": 13,
+							"name": "loadCore",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 14,
+									"name": "loadCore",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "A method called when the core is loaded, all the resources a core needs to access should be called from here"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/LibEmuCore.ts",
+									"line": 37,
+									"character": 19
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								5
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								3,
+								4
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								9,
+								11,
+								13
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "commons/LibEmuCore.ts",
+							"line": 4,
+							"character": 31
+						}
+					],
+					"extendedBy": [
+						{
+							"type": "reference",
+							"name": "CoreChip8",
+							"id": 77
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						2
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "commons/LibEmuCore.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 55,
+			"name": "\"commons/MemoryMap\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/Users/Daan/WebstormProjects/libemu/src/commons/MemoryMap.ts",
+			"children": [
+				{
+					"id": 56,
+					"name": "MemoryMap",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 59,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 60,
+									"name": "new MemoryMap",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 61,
+											"name": "size",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "MemoryMap",
+										"id": 56
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryMap.ts",
+									"line": 5,
+									"character": 26
+								}
+							]
+						},
+						{
+							"id": 58,
+							"name": "map",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/MemoryMap.ts",
+									"line": 5,
+									"character": 7
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "MemoryMapEntry",
+									"id": 69
+								}
+							}
+						},
+						{
+							"id": 57,
+							"name": "size",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/MemoryMap.ts",
+									"line": 4,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 62,
+							"name": "isMapped",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 63,
+									"name": "isMapped",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 64,
+											"name": "address",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryMap.ts",
+									"line": 12,
+									"character": 12
+								}
+							]
+						},
+						{
+							"id": 65,
+							"name": "maapMemoryModule",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 66,
+									"name": "maapMemoryModule",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 67,
+											"name": "address",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 68,
+											"name": "module",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "MemoryModule",
+												"id": 30
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryMap.ts",
+									"line": 20,
+									"character": 20
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								59
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								58,
+								57
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								62,
+								65
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "commons/MemoryMap.ts",
+							"line": 3,
+							"character": 30
+						}
+					]
+				},
+				{
+					"id": 69,
+					"name": "MemoryMapEntry",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 72,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 73,
+									"name": "new MemoryMapEntry",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 74,
+											"name": "address",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 75,
+											"name": "memoryModule",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "MemoryModule",
+												"id": 30
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "MemoryMapEntry",
+										"id": 69
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryMap.ts",
+									"line": 32,
+									"character": 31
+								}
+							]
+						},
+						{
+							"id": 70,
+							"name": "address",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/MemoryMap.ts",
+									"line": 31,
+									"character": 11
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 71,
+							"name": "memoryModule",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/MemoryMap.ts",
+									"line": 32,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "MemoryModule",
+								"id": 30
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								72
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								70,
+								71
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "commons/MemoryMap.ts",
+							"line": 30,
+							"character": 27
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						56,
+						69
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "commons/MemoryMap.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 29,
+			"name": "\"commons/MemoryModule\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/Users/Daan/WebstormProjects/libemu/src/commons/MemoryModule.ts",
+			"children": [
+				{
+					"id": 30,
+					"name": "MemoryModule",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 34,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 35,
+									"name": "new MemoryModule",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 36,
+											"name": "size",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "reference",
+										"name": "MemoryModule",
+										"id": 30
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryModule.ts",
+									"line": 4,
+									"character": 29
+								}
+							]
+						},
+						{
+							"id": 33,
+							"name": "array",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/MemoryModule.ts",
+									"line": 4,
+									"character": 16
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "Uint8Array"
+							}
+						},
+						{
+							"id": 32,
+							"name": "buffer",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/MemoryModule.ts",
+									"line": 3,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "ArrayBuffer"
+							}
+						},
+						{
+							"id": 31,
+							"name": "size",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"sources": [
+								{
+									"fileName": "commons/MemoryModule.ts",
+									"line": 2,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 44,
+							"name": "copyBytes",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 45,
+									"name": "copyBytes",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 46,
+											"name": "buffer",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "reference",
+												"name": "ArrayBuffer"
+											}
+										},
+										{
+											"id": 47,
+											"name": "from",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 48,
+											"name": "to",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 49,
+											"name": "length",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryModule.ts",
+									"line": 24,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 50,
+							"name": "fillBytes",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 51,
+									"name": "fillBytes",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 52,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 53,
+											"name": "to",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 54,
+											"name": "length",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryModule.ts",
+									"line": 32,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 37,
+							"name": "getByte",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 38,
+									"name": "getByte",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 39,
+											"name": "address",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryModule.ts",
+									"line": 12,
+									"character": 11
+								}
+							]
+						},
+						{
+							"id": 40,
+							"name": "setByte",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 41,
+									"name": "setByte",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"parameters": [
+										{
+											"id": 42,
+											"name": "address",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										},
+										{
+											"id": 43,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/MemoryModule.ts",
+									"line": 18,
+									"character": 11
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								34
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								33,
+								32,
+								31
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								44,
+								50,
+								37,
+								40
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "commons/MemoryModule.ts",
+							"line": 1,
+							"character": 33
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						30
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "commons/MemoryModule.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 76,
+			"name": "\"cores/CoreChip8\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/Users/Daan/WebstormProjects/libemu/src/cores/CoreChip8.ts",
+			"children": [
+				{
+					"id": 77,
+					"name": "CoreChip8",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"children": [
+						{
+							"id": 81,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 82,
+									"name": "new CoreChip8",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "CoreChip8",
+										"id": 77
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "LibEmuCore.__constructor",
+										"id": 5
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "cores/CoreChip8.ts",
+									"line": 12,
+									"character": 5
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "LibEmuCore.__constructor",
+								"id": 5
+							}
+						},
+						{
+							"id": 78,
+							"name": "instance",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isStatic": true,
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "cores/CoreChip8.ts",
+									"line": 6,
+									"character": 27
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "CoreChip8",
+								"id": 77
+							}
+						},
+						{
+							"id": 85,
+							"name": "getName",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 86,
+									"name": "getName",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Returns the core's name",
+										"returns": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "LibEmuCore.getName",
+										"id": 9
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/LibEmuCore.ts",
+									"line": 22,
+									"character": 18
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "LibEmuCore.getName",
+								"id": 9
+							}
+						},
+						{
+							"id": 87,
+							"name": "getVersion",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 88,
+									"name": "getVersion",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Return the core's version",
+										"returns": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									},
+									"inheritedFrom": {
+										"type": "reference",
+										"name": "LibEmuCore.getVersion",
+										"id": 11
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "commons/LibEmuCore.ts",
+									"line": 30,
+									"character": 21
+								}
+							],
+							"inheritedFrom": {
+								"type": "reference",
+								"name": "LibEmuCore.getVersion",
+								"id": 11
+							}
+						},
+						{
+							"id": 83,
+							"name": "loadCore",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 84,
+									"name": "loadCore",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									},
+									"overwrites": {
+										"type": "reference",
+										"name": "LibEmuCore.loadCore",
+										"id": 13
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "cores/CoreChip8.ts",
+									"line": 18,
+									"character": 12
+								}
+							],
+							"overwrites": {
+								"type": "reference",
+								"name": "LibEmuCore.loadCore",
+								"id": 13
+							}
+						},
+						{
+							"id": 79,
+							"name": "getInstance",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isStatic": true,
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 80,
+									"name": "getInstance",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"type": {
+										"type": "reference",
+										"name": "CoreChip8",
+										"id": 77
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "cores/CoreChip8.ts",
+									"line": 8,
+									"character": 29
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								81
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								78
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								85,
+								87,
+								83,
+								79
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "cores/CoreChip8.ts",
+							"line": 5,
+							"character": 30
+						}
+					],
+					"extendedTypes": [
+						{
+							"type": "reference",
+							"name": "LibEmuCore",
+							"id": 2
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						77
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "cores/CoreChip8.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 15,
+			"name": "\"libemu\"",
+			"kind": 1,
+			"kindString": "External module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "C:/Users/Daan/WebstormProjects/libemu/src/libemu.ts",
+			"children": [
+				{
+					"id": 16,
+					"name": "LibEmu",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "The LibEmu singleton, it is what controls the emulation cores and holds most information"
+					},
+					"children": [
+						{
+							"id": 22,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The instance's constructor, should not be called by anyone except for LibEmu itself"
+							},
+							"signatures": [
+								{
+									"id": 23,
+									"name": "new LibEmu",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {},
+									"comment": {
+										"shortText": "The instance's constructor, should not be called by anyone except for LibEmu itself"
+									},
+									"type": {
+										"type": "reference",
+										"name": "LibEmu",
+										"id": 16
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "libemu.ts",
+									"line": 20,
+									"character": 27
+								}
+							]
+						},
+						{
+							"id": 20,
+							"name": "cores",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "libemu.ts",
+									"line": 19,
+									"character": 17
+								}
+							],
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"name": "LibEmuCore",
+									"id": 2
+								}
+							}
+						},
+						{
+							"id": 21,
+							"name": "version",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "libemu.ts",
+									"line": 20,
+									"character": 19
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							},
+							"defaultValue": "0.01"
+						},
+						{
+							"id": 17,
+							"name": "instance",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isStatic": true,
+								"isPrivate": true,
+								"isExported": true
+							},
+							"sources": [
+								{
+									"fileName": "libemu.ts",
+									"line": 7,
+									"character": 27
+								}
+							],
+							"type": {
+								"type": "reference",
+								"name": "LibEmu",
+								"id": 16
+							}
+						},
+						{
+							"id": 24,
+							"name": "getVersion",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 25,
+									"name": "getVersion",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Returns the version number",
+										"returns": "\n"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "libemu.ts",
+									"line": 34,
+									"character": 21
+								}
+							]
+						},
+						{
+							"id": 26,
+							"name": "registerCore",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 27,
+									"name": "registerCore",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Will register a core to LibEmu, this should only be called by cores that have not been registered to LibEmu yet"
+									},
+									"parameters": [
+										{
+											"id": 28,
+											"name": "core",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {},
+											"comment": {
+												"text": "\n"
+											},
+											"type": {
+												"type": "reference",
+												"name": "LibEmuCore",
+												"id": 2
+											}
+										}
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "libemu.ts",
+									"line": 42,
+									"character": 23
+								}
+							]
+						},
+						{
+							"id": 18,
+							"name": "getInstance",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isStatic": true,
+								"isExported": true,
+								"isPublic": true
+							},
+							"signatures": [
+								{
+									"id": 19,
+									"name": "getInstance",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {},
+									"comment": {
+										"shortText": "Grants access to the actual class",
+										"returns": "\n"
+									},
+									"type": {
+										"type": "reference",
+										"name": "LibEmu",
+										"id": 16
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "libemu.ts",
+									"line": 13,
+									"character": 29
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								22
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								20,
+								21,
+								17
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								24,
+								26,
+								18
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "libemu.ts",
+							"line": 6,
+							"character": 27
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						16
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "libemu.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "External modules",
+			"kind": 1,
+			"children": [
+				1,
+				55,
+				29,
+				76,
+				15
+			]
+		}
+	]
+}
