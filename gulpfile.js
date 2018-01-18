@@ -18,6 +18,7 @@ gulp.task('document-libemu', ['build-libemu'], function () {
 
             out: './docs',
             json: './docs.json',
+            theme: 'minimal',
 
             name: 'libemu',
             version: true
